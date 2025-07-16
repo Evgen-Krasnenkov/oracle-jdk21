@@ -5,9 +5,9 @@ import java.nio.file.Files;
 import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 
-public class Test {
+public class TestFile {
     public static void main(String[] args) {
-        Test t = new Test();
+        TestFile t = new TestFile();
         t.read("acme.txt");
     }
 
