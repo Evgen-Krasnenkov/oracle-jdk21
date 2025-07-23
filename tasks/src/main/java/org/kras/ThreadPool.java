@@ -65,6 +65,7 @@ public class ThreadPool {
             }
         });
         try {
+            start.wait(100000);
             start.join();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);

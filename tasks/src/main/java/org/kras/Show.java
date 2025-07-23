@@ -1,8 +1,6 @@
 package org.kras;
 
 
-import static java.awt.SystemColor.text;
-
 class Show {
     public static void main(String[] args) {
         Address<String, Integer> integerAddress = new Address<>("localhost", Integer.valueOf(8080));
