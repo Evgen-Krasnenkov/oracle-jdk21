@@ -9,7 +9,7 @@ public class SoutHelloJava {
         int newIndex = a.indexOf("Java");//9
         System.out.println(newIndex);
         StringBuilder b = new StringBuilder(a);
-        int i = b.indexOf("Java");//9
+        int i = b.indexOf("Java");//9^
         System.out.println(i);
 
     }

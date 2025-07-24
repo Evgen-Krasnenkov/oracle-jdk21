@@ -3,8 +3,8 @@ package org.kras;
 public class BooleanService {
     public static void main(String[] args) {
         int a = 2;
-        int b = ~a;
-        int c = a ^ b;
+        int b = ~a; // bitwise NOT
+        int c = a ^ b; //bitwise XOR
         boolean d = a < b & a > c++;
         System.out.println(d + " " + c);
 
