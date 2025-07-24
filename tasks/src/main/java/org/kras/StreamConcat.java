@@ -1,12 +1,11 @@
 package org.kras;
 
-import java.util.Optional;
 import java.util.function.BinaryOperator;
 import java.util.stream.Stream;
 
 public class StreamConcat {
     public static void main(String[] args) {
-        Stream<String> melody1 = Stream.of("E", "G","A");
+        Stream<String> melody1 = Stream.of("E", "G", "A");
         Stream<String> melody2 = Stream.of("D", "C", "F");
         var value = Stream
                 .concat(melody1, melody2)
