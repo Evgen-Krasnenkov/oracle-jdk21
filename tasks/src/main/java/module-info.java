@@ -4,4 +4,5 @@ module org.kras {
     requires com.transport.vehicle;
     requires java.logging;
     requires jdk.compiler;
+    requires java.desktop;
 }
