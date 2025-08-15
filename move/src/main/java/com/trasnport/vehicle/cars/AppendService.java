@@ -6,6 +6,26 @@ import java.util.stream.Stream;
 
 public class AppendService {
     public static void main(String[] args) {
+        Calculable c1 = new Calculable() {
+            @Override
+            public long calculate(int i) {
+                return i + 1;
+            }
+        };
+
+        Calculable c2 = new Calculable() {
+            @Override
+            public long calculate(int i) {
+                return Long.valueOf(i);
+            }
+        };
+
+        Calculable c3 = new Calculable() {
+            @Override
+            public long calculate(int i) {
+                throw new ArithmeticException("It is an easy exception");
+            }
+        };
         StringBuilder result = Stream.of( "a", "b" )
                 .parallel()
                 .collect(
