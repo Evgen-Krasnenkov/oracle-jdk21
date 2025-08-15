@@ -56,6 +56,23 @@ public class TreeNode {
         preOrderVoid(node.right, result);
     }
 
+    public static TreeNode findNode(TreeNode root, int val) {
+        if (root == null) {
+            return null;
+        }
+
+        if (root.val == val) {
+            return root;
+        }
+
+        TreeNode leftResult = findNode(root.left, val);
+        if (leftResult != null) {
+            return leftResult;
+        }
+
+        return findNode(root.right, val);
+    }
+
     public static TreeNode createTree(Integer[] root) {
         if (root == null || root.length == 0) {
             return null;
