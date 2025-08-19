@@ -22,7 +22,7 @@ public class StreamService {
                 .takeWhile(isThree) // take elements in until true
                 .dropWhile(isEven) // rejects elements in until true
                 .limit(3)
-                .forEach(s -> System.out.println(s));
+                .forEach(s -> System.out.print(s + " "));
     }
 
 }
